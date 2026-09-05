@@ -1,0 +1,14 @@
+streamlit>=1.32
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+opencv-python-headless>=4.8
+Pillow>=10.0
+reportlab>=4.0
+joblib>=1.3
+
+# Optional but recommended for the full rubric experience:
+tensorflow>=2.15      # real Keras ANN / CNN transfer-learning (falls back to sklearn MLP if missing)
+shap>=0.44            # TreeExplainer XAI (falls back to permutation importance if missing)
+mlflow>=2.10          # experiment tracking UI (falls back to local JSONL log if missing)
+anthropic>=0.34        # optional: real LLM phrasing on top of RAG evidence (set ANTHROPIC_API_KEY)
